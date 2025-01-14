@@ -1,0 +1,100 @@
+body {
+background-image: url(l.png);
+background-size: cover;
+}
+
+.navbar {
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+    align-items: center; /* Menyelaraskan item di tengah secara vertikal */
+    justify-content: center; /* Menyelaraskan item di tengah secara horizontal */
+    position: relative; /* Untuk penempatan menu */
+    background-color: #f8f8f8; /* Warna latar belakang navbar */
+    padding: 10px 20px; /* Jarak dalam navbar */
+}
+
+.menu-container {
+    text-align: center; /* Memastikan menu berada di tengah */
+    margin: 10px 0; /* Jarak atas dan bawah untuk menu */
+}
+
+#menu {
+    display: flex; /* Menggunakan flexbox untuk tata letak horizontal */
+    justify-content: center; /* Menyelaraskan item menu di tengah */
+    list-style-type: none; /* Menghilangkan bullet point */
+    margin: 0; /* Menghilangkan margin */
+    padding: 0; /* Menghilangkan padding */
+}
+
+#menu li {
+    margin: 0 15px; /* Jarak antar item menu */
+}
+
+#menu a {
+    text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+    color: #333; /* Warna teks tautan */
+}
+
+#menu a:hover {
+    text-decoration: none; /* Garis bawah saat hover */
+    background-color: #f8f8f8;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.container {
+    text-align: center; /* Memastikan teks di dalam container berada di tengah */
+    padding: 20px;
+    background-color: #f8f8f8;
+    
+}
+
+.profile {
+    margin-top: 20px; /* Jarak atas untuk profil */
+}
+
+.profile p {
+    text-align: justify;
+}
+
+.profile-image {
+    width: 150px; /* Atur lebar gambar sesuai kebutuhan */
+    height: auto; /* Memastikan proporsi gambar tetap */
+    border-radius: 50%; /* Membuat gambar menjadi bulat (opsional) */
+}
+
+.profile-name {
+    margin-top: 10px; /* Jarak atas untuk nama */
+    font-size: 24px; /* Ukuran font untuk nama */
+}
+
+footer {
+    background-color: #f8f8f8;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+@media (max-width: 200px) {
+    .navbar {
+        flex-direction: column; /* Mengubah arah flex menjadi kolom */
+        align-items: flex-start; /* Menyelaraskan item ke kiri */
+    }
+
+    #menu {
+        flex-direction: column; /* Mengubah arah menu menjadi kolom pada perangkat kecil */
+        margin-bottom: 10px; /* Jarak bawah untuk menu */
+    }
+
+    #menu li {
+        margin: 5px 0; /* Jarak antar item menu */
+    }
+    
+
+    .profile {
+        margin-top: 20px; /* Mengurangi jarak atas untuk profil */
+    }
+
+    .profile-name {
+        font-size: 20px; /* Mengurangi ukuran font untuk nama */
+    }
+}
